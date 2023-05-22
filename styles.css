@@ -1,0 +1,34 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFE0D6;
+}
+
+.logo-container {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 960px;
+}
+
+.logo-img {
+    width: 708px;
+    height: 456px;
+    left: 377px;
+    top: 199px;
+}
+.red-ice-cream-container {
+    position: absolute; 
+    margin-top: 30px;
+
+}
+.yellow-ice-cream-container {
+    position: absolute;
+    right: 0;
+    top:319px;
+}
