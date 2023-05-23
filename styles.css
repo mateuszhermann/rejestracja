@@ -1,8 +1,13 @@
+/* -- RESET STYLI -- */
+
 * {
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Roboto,sans-serif;
 }
+
+/* -- HEADER -- */
 
 header {
     background-color: #FFE0D6;
@@ -32,3 +37,66 @@ header {
     right: 0;
     top:319px;
 }
+
+/* -- MENU -- */
+
+.navigation {
+    position: relative;
+    z-index: 1;
+    position:sticky;
+    transform: translateY(22px);
+    font-size: 12px;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .navi-button {
+    position:relative;
+    display: block;
+    cursor: pointer;
+    width: 59px; 
+    height: 36px; 
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 16px;
+    margin-left:38px;
+    padding: 10px 10px 10px 15px;
+
+  }
+  
+  .menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    width: 348px;
+    position:absolute;
+  }
+  
+  .menu-link {
+    padding: 15px;
+    background-color: #77B2F8;;
+  }
+  
+  .menu-toggle:checked ~ .menu {
+    display: block;
+  }
+  .reservation-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+  }
+  
+  .express-reservation,
+  .premium-reservation {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #f1f1f1;
+    margin-right: 38px;
+  }
+  
+  .menu-toggle:checked ~ .menu {
+    display: block;
+  }
