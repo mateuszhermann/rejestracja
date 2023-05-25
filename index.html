@@ -11,29 +11,40 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="navigation"> 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="navi-button">Navi</label>
-            <ul class="menu">
-                <li class="menu-link">Strona główna</li>
-                <li class="menu-link">Pakiety rezerwacji</li>
-                <li class="menu-link">Dlaczego warto korzystać z panelu?</li>
-                <li class="menu-link">Opinie klientów</li>
-                <li class="menu-link">Kontakt</li>
-            </ul>
+        <nav class="navigation-container"> 
+            <div class="left-nav-btns">
+                <button class="left-nav-btn" >Navi 🍔</button>
+            </div>
+            <div class="p-nav">
+                <p>Najlepsze rezerwacje stolików</p>
+            </div>
             <div class="reservation-buttons">
-                <button class="express-reservation">Zarezerwuj ekspresowo</button>
-                <button class="premium-reservation">Rezerwacja premium</button>
+                <button class="express-reservation-btn">Zarezerwuj ekspresowo ⏱️</button>
+                <button class="premium-reservation-btn">Rezerwacja premium 💎</button>
             </div>
         </nav>
-        <div class="yellow-ice-cream-container">
-            <img src="./assets/right_yellor_ice_cream.png" alt="" class="yellow-ice-cream">
-        </div>
-        <div class="red-ice-cream-container">
-            <img src="./assets/red_ice_cream.png" alt="red ice cream" srcset="">
-        </div>
-        <div class="logo-container">
-            <img src="./assets/logo_big.svg" alt="logo">
+        <div class="hero-container">
+            <div class="red-ice-cream-container">
+                <img src="./assets/red_ice_cream.png" alt="red ice cream" srcset="">
+            </div>
+            <div class="logo-container">
+                <img src="./assets/logo_big.svg" alt="logo">
+                <h1 class="h1-hero">
+                    Oferujemy dwie drogi rezerwacji stolika: ekspresową
+                     jak i przeznaczoną dla <br> bardziej
+                    wymagających klientów ze specjalnymi preferencjami.  
+                </h1>
+                <div class="buttons-hero">
+                    <button class="express-reservation-btn">Zarezerwuj ekspresowo ⏱️</button>
+                    <button class="premium-reservation-btn">Rezerwacja premium 💎</button>
+                </div>
+            </div>
+            <div class="yellow-ice-cream-container">
+                <img src="./assets/right_yellor_ice_cream.png" alt="" class="yellow-ice-cream">
+            </div>
+            <div class="call-to-us">
+                <button> Zapytaj nas o cokolwiek <br>chcesz ☎️</button>
+            </div>
         </div>
     </header>
 </body>

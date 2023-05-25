@@ -1,102 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 /* -- RESET STYLI -- */
 
 * {
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Roboto,sans-serif;
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto,sans-serif;
+  font-size: 10px;
+}
+/* -- COLORS -- */
+
+:root {
+  --main-color:#FFE0D6;
+  --footer-color:#77B2F8; 
+  --express-card-color:#B9D9FF;
+  --premium-card-color: #FFF388;
+  --text-color:#333;
+  --express-btn:#fff;
 }
 
 /* -- HEADER -- */
 
-header {
-    background-color: #FFE0D6;
+ header {
+  background-color: var(--main-color);
+}
+
+.h1-hero {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 24px;
+  color: var(--text-color);
+  padding-bottom: 32px;
+  width: 555px;
+}
+
+.hero-container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
 }
 
 .logo-container {
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+.express-reservation-btn {
+  background-color: var(--express-btn);
+  border: 1px solid var(--text-color);
 
-.logo-img {
-    width: 708px;
-    height: 456px;
-    left: 377px;
-    top: 199px;
 }
 .red-ice-cream-container {
-    position: absolute; 
-    margin-top: 30px;
-
+  width: 510px;
 }
 .yellow-ice-cream-container {
-    position: absolute;
-    right: 0;
-    top:319px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
 }
 
+.call-to-us {
+  grid-column-start: 3;
+}
+
+.call-to-us button {
+  background-color: var(--express-btn);
+  border: 1px solid #000000;
+  border-radius: 16px;
+  position: relative;
+  padding: 10px 12px 11px;
+  gap: 10px;
+  cursor: pointer;
+  width: 169px;
+  height: 53px;
+  font-size: 12px;
+
+}
+
+
 /* -- MENU -- */
+.p-nav {
+  color: var(--express-card-color);
+  position: relative;
+  margin-left: 300px;
+  margin-top: 10px;
+  font-size: 12px;
+}
 
-.navigation {
-    position: relative;
-    z-index: 1;
-    position:sticky;
-    transform: translateY(22px);
-    font-size: 12px;
-  }
+.navigation-container {
+  display: flex;
+  font-size: 19px;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-left:38px;
+}
   
-  .menu-toggle {
-    display: none;
-  }
-  
-  .navi-button {
-    position:relative;
-    display: block;
-    cursor: pointer;
-    width: 59px; 
-    height: 36px; 
-    background: #FFFFFF;
-    border: 1px solid #333333;
-    border-radius: 16px;
-    margin-left:38px;
-    padding: 10px 10px 10px 15px;
+.left-nav-btn {
+  display: block;
+  cursor: pointer;
+  width: 66px; 
+  height: 36px; 
+  background: #FFFFFF;
+  border: 1px solid var(--text-color);
+  border-radius: 16px;
+  font-size: 12px;
+}
 
-  }
-  
-  .menu {
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    width: 348px;
-    position:absolute;
-  }
-  
-  .menu-link {
-    padding: 15px;
-    background-color: #77B2F8;;
-  }
-  
-  .menu-toggle:checked ~ .menu {
-    display: block;
-  }
-  .reservation-buttons {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-  }
-  
-  .express-reservation,
-  .premium-reservation {
-    padding: 10px;
-    margin-left: 10px;
-    background-color: #f1f1f1;
-    margin-right: 38px;
-  }
-  
-  .menu-toggle:checked ~ .menu {
-    display: block;
-  }
+.express-reservation-btn,
+.premium-reservation-btn {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 38px;
+  border-radius: 16px;
+  width: 169px;
+  height: 37px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.premium-reservation-btn {
+  background-color: var(--text-color);
+  color: var(--express-btn);
+  border: none;
+}
+
