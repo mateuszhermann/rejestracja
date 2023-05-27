@@ -16,9 +16,10 @@
   --main-color:#FFE0D6;
   --footer-color:#77B2F8; 
   --express-card-color:#B9D9FF;
-  --premium-card-color: #FFF388;
+  --premium-card-color: rgba(255, 243, 136, 0.4);;
   --text-color:#333;
   --express-btn:#fff;
+  --reservation-section:linear-gradient(180deg, #FFE0D6 42.19%, #FFF388 100%);
 }
 
 /* -- HEADER -- */
@@ -40,7 +41,7 @@
 .hero-container {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.3fr;
 }
 
 .logo-container {
@@ -78,11 +79,10 @@
   width: 169px;
   height: 53px;
   font-size: 12px;
-
 }
 
-
 /* -- MENU -- */
+
 .p-nav {
   color: var(--express-card-color);
   position: relative;
@@ -126,5 +126,157 @@
   background-color: var(--text-color);
   color: var(--express-btn);
   border: none;
+}
+
+/* -- RESERVATION OPTIONS SECTION -- */
+
+.reservation-options-container {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto;
+  background: linear-gradient(180deg, #FFE0D6 42.19%, #FFF388 100%);
+}
+
+.h2-reservation {
+  display: grid;
+  grid-column-start: 2;
+  justify-content: center;
+}
+
+.h2-reservation h2 {
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  margin-bottom: 32px;
+}
+
+.h2-reservation p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 150px;
+}
+
+.offer-cards {
+  grid-column-start:2 ;
+  grid-row-end: 3;
+  display: flex;
+  justify-self: center;
+  gap:24px;
+  margin-bottom: 316px;
+
+}
+
+.offer-cards div {
+  width: 437px;
+  height: 700px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.express-card{
+  background: var(--express-card-color);
+
+}
+
+.premium-card{
+  background: var(--premium-card-color);
+}
+
+/* -- WHY CHOOSE US SECTION -- */
+
+.why-choose-us-section {
+  background-color: #FFF095;
+}
+
+.h2-choose-us {
+  margin-left:44px;
+  padding-top: 65px;
+}
+
+.h2-choose-us h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap:70px;
+  padding-bottom:81px ;
+}
+
+.benefits h2 {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.benefits p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+}
+.benefits div {
+  width: 323px;
+  height: 232px;
+  margin-top:60px ;
+}
+
+/* -- OPINIONS SECTION -- */
+.opinions-section {
+  background:linear-gradient(180deg, #FFF095 0%, #FFE0D6 100%);;
+}
+
+.opinions-title {
+  position: relative;
+  padding-top: 135px;
+  padding-bottom: 60px;
+}
+
+.opinions-title h2 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom:32px ;
+}
+
+.opinions-title p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.users-opinions {
+  display: grid;
+  grid-template-columns: 330px 555px 440px;
+  grid-template-rows: 330px 510px;
+  grid-gap: 10px;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 150px;
+}
+
+.user-opinion {
+  background: #FFFFFF;
+  box-shadow: 19px 109px 44px rgba(0, 0, 0, 0.01), 11px 62px 38px rgba(0, 0, 0, 0.05), 5px 27px 28px rgba(0, 0, 0, 0.09), 1px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 10% 10% 10%
+
+}
+
+.user-opinion p {
+  font-size: 20px;
+  line-height:35px ;
+}
+
+.users-opinions > div:nth-child(3){
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.users-opinions > div:nth-child(4){
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
