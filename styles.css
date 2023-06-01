@@ -7,8 +7,7 @@
   padding:0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Roboto,sans-serif;
-  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 /* -- COLORS -- */
 
@@ -181,7 +180,11 @@
 .premium-card{
   background: var(--premium-card-color);
 }
-
+.reservation-options img {
+  position:absolute;
+  top: 110vh;
+  right: 0;
+}
 /* -- WHY CHOOSE US SECTION -- */
 
 .why-choose-us-section {
@@ -251,7 +254,7 @@
   grid-gap: 10px;
   justify-content: center;
   gap: 20px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 
 .user-opinion {
@@ -280,3 +283,37 @@
   grid-row: span 1;
 }
 
+/* -- FOOTER SECTION -- */
+
+footer {
+  background-color: #FFE0D6;
+  color: var(--footer-color);
+}
+
+.footer-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  flex: 0 0 auto;
+  margin:20px 100px 20px 80px;
+}
+
+.footer-menu-container > div:not(.footer-logo) {
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+ul a {
+  text-decoration: none;
+  color:var(--footer-color);
+  font-size: 16px;
+  line-height: 20px;
+}
