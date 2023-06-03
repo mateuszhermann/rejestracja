@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 
 /* -- RESET STYLI -- */
@@ -19,6 +20,7 @@
   --text-color:#333;
   --express-btn:#fff;
   --reservation-section:linear-gradient(180deg, #FFE0D6 42.19%, #FFF388 100%);
+  --p-nav-color: #77B2F8;
 }
 
 /* -- HEADER -- */
@@ -28,8 +30,8 @@
 }
 
 .h1-hero {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
   line-height: 24px;
   color: var(--text-color);
@@ -65,6 +67,9 @@
 
 .call-to-us {
   grid-column-start: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .call-to-us button {
@@ -83,7 +88,7 @@
 /* -- MENU -- */
 
 .p-nav {
-  color: var(--express-card-color);
+  color: var(--p-nav-color);
   position: relative;
   margin-left: 300px;
   margin-top: 10px;
@@ -131,7 +136,7 @@
 
 .reservation-options-container {
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 22.5% 55% 22.5%;
   grid-template-rows: auto;
   background: linear-gradient(180deg, #FFE0D6 42.19%, #FFF388 100%);
 }
@@ -144,8 +149,8 @@
 
 .h2-reservation h2 {
   text-align: center;
-  font-size: 40px;
-  font-style: normal;
+  font-size: 64px;
+  font-weight: 400;
   margin-bottom: 32px;
 }
 
@@ -153,6 +158,7 @@
   text-align: center;
   font-size: 16px;
   margin-bottom: 150px;
+  line-height: 28px;
 }
 
 .offer-cards {
@@ -161,8 +167,13 @@
   display: flex;
   justify-self: center;
   gap:24px;
-  margin-bottom: 316px;
-
+  margin-bottom: 200px;
+}
+.call-us-end {
+  display: flex;
+  background-color: #FFF095;
+  justify-content: flex-end;
+  padding-right: 150px;
 }
 
 .offer-cards div {
@@ -180,11 +191,13 @@
 .premium-card{
   background: var(--premium-card-color);
 }
+
 .reservation-options img {
   position:absolute;
   top: 110vh;
   right: 0;
 }
+
 /* -- WHY CHOOSE US SECTION -- */
 
 .why-choose-us-section {
@@ -197,8 +210,9 @@
 }
 
 .h2-choose-us h2 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .benefits {
@@ -213,11 +227,13 @@
   text-align: center;
   margin-bottom: 35px;
 }
+
 .benefits p {
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
-  line-height: 18px;
+  line-height: 24px;
 }
+
 .benefits div {
   width: 323px;
   height: 232px;
@@ -225,6 +241,7 @@
 }
 
 /* -- OPINIONS SECTION -- */
+
 .opinions-section {
   background:linear-gradient(180deg, #FFF095 0%, #FFE0D6 100%);;
 }
@@ -236,8 +253,9 @@
 }
 
 .opinions-title h2 {
-  font-size: 40px;
+  font-size: 64px;
   text-align: center;
+  font-weight: 400;
   padding-bottom:32px ;
 }
 
@@ -253,7 +271,7 @@
   grid-template-rows: 330px 510px;
   grid-gap: 10px;
   justify-content: center;
-  gap: 20px;
+  gap: 17px;
   padding-bottom: 200px;
 }
 
@@ -307,13 +325,57 @@ footer {
 
 ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
  
 ul a {
   text-decoration: none;
   color:var(--footer-color);
   font-size: 16px;
-  line-height: 20px;
+  line-height: 30px;
+}
+
+.footer-h3 {
+  line-height: 130px;
+  font-size: 72px;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  gap:15px;
+  margin-bottom: 54px;
+  margin-top:10px;
+}
+.footer-express-btn {
+  margin-top: 47px ;
+  margin-left:180px;
+}
+
+.footer-contact p:nth-of-type(1) {
+  font-size: 36px;
+  font-weight: 700;
+}
+.footer-contact p:nth-of-type(2) {
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer-contact p:nth-of-type(3) {
+  margin-top: 25px;
+}
+.footer-premium-btn {
+  margin-left:-15px;
+}
+
+.address p {
+  line-height: 30px;
+}
+.address {
+  margin-bottom: 125px;
+}
+
+.footer-end {
+  height: 50px;
+  border-bottom: 1px solid #B9D9FF;
+  margin-left: 40px;
+  margin-right: 40px;
 }
