@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style class="src"></style>
+    <script src="./nav-overlay.js" type="text/javascript" async></script>
     <title>Freeze your date | Najlepsze rezerwacje stolików</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,7 +13,24 @@
     <header>
         <nav class="navigation-container"> 
             <div class="left-nav-btns">
-                <button class="left-nav-btn" >Navi 🍔</button>
+                <button class="left-nav-btn" onclick="navOn()">Navi 🍔</button>
+            </div>
+            <div id="nav-overlay" class="fade-in">
+                <div class="close" onclick="navOff()">
+                    <img src="./assets/🦆 icon _x close delete_.svg">
+                </div>
+                <div class="spacer"></div>
+                <div class="booking">
+                    <button class="express-reservation-btn">Zarezerwuj ekspresowo ⏱️</button>
+                    <button class="premium-reservation-btn">Rezerwacja premium 💎</button>
+                </div>
+                <div class="littlemenu">
+                    <div class="lmoptions"><a href="#">Strona główna</a></div>
+                    <div class="lmoptions"><a href="#">Pakiety rezerwacji</a></div>
+                    <div class="lmoptions"><a href="#">Dlaczego warto skorzystać z panelu?</a></div>
+                    <div class="lmoptions"><a href="#">Opinie klientów</a></div>
+                    <div class="lmoptions"><a href="#">Kontakt</a></div>
+                </div>
             </div>
             <div class="p-nav">
                 <p>Najlepsze rezerwacje stolików</p>
@@ -56,14 +73,14 @@
             <div class="offer-cards">
                 <div class="express-card">
                     <div class="cards-content">
-                        <p>Rezerwacja</p>
-                        <h3>Ekspresowa ⏰</h3>
+                        <p>REZERWACJA</p>
+                        <h3 class="reserv-type">Ekspresowa ⏰</h3>
                         <p>Cena:</p>
-                        <h3>0zł</h3>
-                        <button class="express-reservation-btn">Zarezerwuj ekspresowo ⏱️</button>
-                        <p>Preferowany czas przed to około 2h</p>
-                        <p>Rezerwacja zawiera</p>
-                            <ul>
+                        <h3  class="reserv-price">0zł</h3>
+                        <button class="express-reservation-btn btn-white">Zarezerwuj ekspresowo ⏱️</button>
+                        <p class="prefer-time">Preferowany czas przed to około 2h</p>
+                        <p>REZERWACJA ZAWIERA</p>
+                            <ul  class="reserv-list">
                                 <li>Ilość gości</li>
                                 <li>Termin wydarzenia</li>
                                 <li>Godzinę</li>
@@ -74,20 +91,22 @@
                     </div>
                 </div>
                 <div class="premium-card">
-                    <p>Rezerwacja</p>
-                    <h3>Premium 💎</h3>
-                    <p>Cena:</p>
-                    <h3>10zł</h3>
-                    <button class="premium-reservation-btn">Rezerwacja premium 💎</button>
-                    <p>Preferowany czas przed to około jeden dzień</p>
-                    <p>Rezerwacja zawiera</p>
-                        <ul>
+                    <div class="cards-content">
+                        <p>REZERWACJA</p>
+                        <h3 class="reserv-type">Premium 💎</h3>
+                        <p>Cena:</p>
+                        <h3 class="reserv-price">10zł</h3>
+                        <button class="premium-reservation-btn btn-white">Rezerwacja premium 💎</button>
+                        <p class="prefer-time">Preferowany czas przed to około jeden dzień</p>
+                        <p>REZERWACJA ZAWIERA</p>
+                        <ul class="reserv-list">
                             <li>Wszystko co w rezerwacji ekspresowe</li>
                             <li>Przygotowanie na specjalną okazję</li>
                             <li>Wybór konkretnych stolików</li>
                             <li>Zaplanowanie konkretnego menu</li>
                             <li>Przydzielenie specjalnej osoby, która zadba o wieczór</li>
                         </ul>
+                    </div>
                 </div>
             </div>
         </div>

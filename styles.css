@@ -132,6 +132,7 @@
   border: none;
 }
 
+
 /* -- RESERVATION OPTIONS SECTION -- */
 
 .reservation-options-container {
@@ -198,6 +199,41 @@
   right: 0;
 }
 
+.cards-content p {
+  padding:30px 20px 10px 40px;
+  font-weight: 700;
+}
+
+.reserv-type {
+  margin:10px 40px 10px 40px;
+  font-size: 48px;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 20px;
+}
+
+.reserv-price {
+  padding:10px 20px 10px 40px;
+  font-size: 48px;
+}
+
+.btn-white {
+  margin:10px 40px 10px 40px;
+}
+
+.prefer-time {
+  font-weight: 300 !important;
+  border-bottom: 1px solid #999999;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding:20px 20px 10px 10px !important;
+}
+
+.reserv-list {
+  margin:20px 40px 10px 50px;
+  line-height: 25px;
+  list-style-type: disc;
+  font-weight: 300;
+}
 /* -- WHY CHOOSE US SECTION -- */
 
 .why-choose-us-section {
@@ -378,4 +414,100 @@ ul a {
   border-bottom: 1px solid #B9D9FF;
   margin-left: 40px;
   margin-right: 40px;
+}
+#nav-overlay {
+  display: none;
+  position: absolute;
+  width: 348px;
+  height: 655px;
+  left: 0px;
+  top: 43px;
+  background: #77B2F8;
+  box-shadow: 0px 110px 44px rgba(0, 0, 0, 0.01), 0px 62px 37px rgba(0, 0, 0, 0.05), 0px 28px 28px rgba(0, 0, 0, 0.09), 0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.fade-in { animation: fadeIn 1s; }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  width: 15px;
+  height: 13.76px;
+  left: 45px;
+  top: 45.87px;
+}
+.close:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+.littlemenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  width: 263px;
+  height: 248px;
+  left: 40px;
+  top: 121px;
+}
+.spacer {
+  position: absolute;
+  width: 268px;
+  height: 1px;
+  left: 40px;
+  top: 409px;
+  background: #DBDBDB;
+}
+.booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  position: absolute;
+  width: 169px;
+  height: 94px;
+  left: calc(50% - 169px/2 - 0.5px);
+  top: 460px;
+}
+.lmoptions {
+
+/* Desktop/Akapit */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.lmoptions a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  /* identical to box height, or 150% */
+  
+  text-align: center;
+  
+  color: #FFFFFF;
 }
